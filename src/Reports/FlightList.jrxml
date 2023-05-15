@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FlightList" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a465670-cc4a-4270-965f-8efb86e33b71">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="A_R_S.xml"/>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#EFEFEF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableDataset" uuid="de71ccce-8ba4-4dec-86e7-dfffa7943a42">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="A_R_S.xml"/>
+		<queryString language="SQL">
+			<![CDATA[select * from addflightinfo_tb]]>
+		</queryString>
+		<field name="flightid" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="flightid"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="flightname" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="flightname"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="flighttype" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="flighttype"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="from1" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="from1"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="airport_name1" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="airport_name1"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="destination" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="destination"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="airport_name2" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="airport_name2"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="date" class="java.sql.Date">
+			<property name="com.jaspersoft.studio.field.label" value="date"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="arrivaltime" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="arrivaltime"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="departuretime" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="departuretime"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="economySeats" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="economySeats"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="businessSeats" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="businessSeats"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="firstSeats" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="firstSeats"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="economyPrice" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="economyPrice"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="businessPrice" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="businessPrice"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+		<field name="firstPrice" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="firstPrice"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="addflightinfo_tb"/>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="-10" width="840" height="80" forecolor="#0000CC" uuid="159c0d95-1c09-4071-b2e7-af47a73a829b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Algerian" size="51" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[:: Flight List ::]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="570" y="0" width="100" height="30" uuid="70271859-5cc6-4ecb-ae6b-347a7969c20f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="680" y="0" width="100" height="30" uuid="338dae45-52e6-4134-b986-ec9e1cefa54d"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="0" width="100" height="30" uuid="9cbf2a5b-8ac1-4433-84ad-1672937d5a8d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="200" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<componentElement>
+				<reportElement x="0" y="0" width="802" height="170" uuid="9eb7d8a5-5cb2-48a9-b036-e586801ea6c1">
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="tableDataset" uuid="3a8b5747-8fff-4e77-9a94-81b159843063">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="50" uuid="659a3bb4-6b03-44dd-bea0-b68871e1f773">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="188a6fcd-0578-4772-9088-8cf092b80a48"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FlightID]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="8e629af6-8316-4934-852c-b8b4339e9134"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{flightid}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="c1c86503-3b41-497e-9dae-90726c6c3e15">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="e47b4408-3410-4ed3-bcf4-1ffbad33de13"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FlightName]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="b8abeae9-41d1-401e-af82-b6ce648458c3"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{flightname}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="ce1a8812-aee8-4989-9c83-c7d2fc5f2d01">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="a66e333a-2ce7-4efc-8854-a35fbee25872"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FlightType]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="3c050d3a-36ec-4e81-90f4-abd389f00ffd"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{flighttype}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="dc1e4e59-c994-464c-a0c9-79f88cd6bfe0">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="d75a65f5-b72e-4949-b32f-678c0b1a0520"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[From]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="b4b4c985-acec-4a7b-8ea2-94626dd427f5"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{from1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="09470b09-d421-4d19-82a3-36455801619b">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="1657f69c-9798-4587-ab2b-5af64aa038df"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[AirportName]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="aba95c56-e8a8-44bf-ba24-51737e2a6d34"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{airport_name1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="c4d47a9c-8508-4c00-aac1-6de09ae6c61f">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="cc80f663-c32d-47d3-ad55-8027eb4dbeb2"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Destination]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="d8721e16-ca59-466f-acc3-42b587c2a47e"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{destination}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="fbc0d7d8-41d7-439d-8b75-4e367994d731">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="7e83fb47-8db0-4032-8974-123fb799711e"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[AirportName]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="becbd5f9-93d6-44a5-bb56-355db1c820ed"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{airport_name2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="978016b7-f2e5-4bf3-9439-c9c620c98c48">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="fcf1a74f-54d0-4d79-9e96-6c61655d2183"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="05f15d8c-2280-4822-a98b-a33f437737e4"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="0bb22c28-100d-4374-90ca-dccbe09d0c06">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="34d29c62-d934-4b82-b372-0f38bfa5ad7e"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ArrivalTime]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="0b547b08-0a4f-4a10-addb-e57ce4c292bd"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{arrivaltime}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="d348fa51-abd6-4682-83c3-10637f0696bb">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="a1f37a6a-8005-4c81-8bf2-caa928dfb036"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[DepartureTime]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="9c21e2ee-f9d1-4c44-94d1-bd87675030d6"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{departuretime}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="426011b4-ea5e-4c6a-a3d2-9287e5dd679d">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="d337b0e4-ae52-4362-8f7c-4b766326c564"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[EconomySeats]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="71c47f50-2b27-4995-a392-1f496412f541"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{economySeats}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="70aa5cb8-8876-4dc6-bf0d-9c532a0d0703">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="5af30ee7-e8b4-4126-8c22-8ae2c2fd845b"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[BusinessSeat]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="0e05cf98-7fbb-4b2f-9ecb-4fa5de8ce150"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{businessSeats}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="c98a69f1-6f36-4171-b5df-beace9ce6a38">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="6abfce1f-3395-4c9e-aa0b-af60824e6235"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FirstSeat]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="8892fd51-b4ca-4f6e-b408-c774c3f93459"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{firstSeats}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="e40ae3ba-91b9-4638-ae3b-c2badc0affb7">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="83e029fb-a609-4b7f-bb8e-ba70b3210044"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[EconomyClassPrice]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="e78d3ff4-f32d-432e-8f45-3ac03b29a4da"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{economyPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="9495dd95-10ac-4504-b616-a4be7f3084fc">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="1c5f99c7-01ae-414c-b3f3-b2d48e18bd8e"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[BusinessClassPrice]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="8f8311f9-43d1-44e8-b491-283606f6878d"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{businessPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="aa7745e0-0961-485b-8116-defec8be007d">
+						<jr:tableHeader style="Table_TH" height="50">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="50" height="50" forecolor="#FCFFFF" backcolor="#050505" uuid="20a60239-5919-4868-966d-9bab91097103"/>
+								<box leftPadding="2"/>
+								<textElement>
+									<font fontName="Times New Roman" size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FirstClassPrice]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table_TH" height="2"/>
+						<jr:columnHeader style="Table_CH" height="30"/>
+						<jr:columnFooter style="Table_CH" height="2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="71957ba5-0a75-4b6e-b442-6e1ea1c1f223"/>
+								<box leftPadding="2"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman" size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{firstPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>
